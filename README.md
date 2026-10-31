@@ -161,3 +161,9 @@ evidence/           私有运行记录（Git 忽略）
 接口说明：<http://127.0.0.1:8765/docs>。
 
 实现参考：[OpenAI Function calling](https://developers.openai.com/api/docs/guides/function-calling)、[pypdf 文本提取](https://pypdf.readthedocs.io/en/stable/user/extract-text.html)、[FastAPI 文件上传](https://fastapi.tiangolo.com/tutorial/request-files/)、[PDF.js 示例](https://mozilla.github.io/pdf.js/examples/)。
+
+## Agent 架构
+
+![Papertrail Agent 架构](docs/architecture.png)
+
+模型通过标准函数调用返回工具名与参数；本地编排校验并执行工具，将原文结果回传模型。PDF 导入时建立 SQLite 页级文字索引，读页工具则独立解析原始 PDF。

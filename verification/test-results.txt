@@ -1,0 +1,5 @@
+2026-10-31
+Command: python -m pytest -q
+Result: 13 passed
+Environment: macOS, Python 3.9.6
+Protocol tests use a scripted model; live model evidence is stored separately.

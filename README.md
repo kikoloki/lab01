@@ -1,5 +1,7 @@
 # Papertrail · 本地 PDF 阅读助手
 
+开发交互提示词整理版：[`prompts/development-prompts.md`](prompts/development-prompts.md)。Agent 运行时系统提示：[`prompts/system.txt`](prompts/system.txt)。
+
 为 BYOA 实验制作的单用途 Agent：导入 PDF 后，用标准 LLM function calling 调用本地工具，检索和阅读原文，生成带物理页码引用的回答。默认使用中文。
 
 ## 当前验证状态
